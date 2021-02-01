@@ -1,0 +1,4 @@
+/project/env.list
+/project/udagram-deployment/k8s/aws-secret.yaml
+/project/udagram-deployment/k8s/env-*.yaml
+/.idea/dataSources/
