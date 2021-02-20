@@ -7,9 +7,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - name: "8100"
-    protocol: TCP
-    port: 8100
+  - name: "http"
+    port: 80
     targetPort: 80
   selector:
     service: frontend

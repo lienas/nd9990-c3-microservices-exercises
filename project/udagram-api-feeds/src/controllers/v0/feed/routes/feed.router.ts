@@ -28,7 +28,7 @@ export function requireAuth(req: Request, res: Response, next: NextFunction) {
 
 // Get all feed items
 router.get('/', async (req: Request, res: Response) => {
-    console.log('API called');
+    console.log(new Date() + ' :: API called');
   const items = await FeedItem.findAndCountAll({order: [['id', 'DESC']]});
     console.log('Found items' );
   items.rows.map((item) => {
